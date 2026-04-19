@@ -1,6 +1,7 @@
 """Example: RLM with DashScope (Qwen models)"""
 
 import os
+import random
 
 from rlm import RLM
 from rlm.logger import RLMLogger
@@ -47,8 +48,6 @@ for i in range(100):
     context_lines.append(f"Line {i}: This is filler text with no important information.")
 
 # Insert a secret at a random position
-import random
-
 secret_line = random.randint(30, 70)
 context_lines[secret_line] = f"Line {secret_line}: IMPORTANT: The answer to life is 42."
 
