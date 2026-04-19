@@ -2,7 +2,7 @@ name: Deploy RLM Animation to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["feat/rlm-animation-visualizer"]
   workflow_dispatch:
 
 permissions:
