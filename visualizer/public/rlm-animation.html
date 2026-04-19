@@ -630,6 +630,321 @@
             margin: 0 auto;
             line-height: 1.6;
         }
+
+        /* ===================== Mobile Responsive ===================== */
+        @media (max-width: 900px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                height: auto;
+                min-height: calc(100vh - 180px);
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                padding: 16px;
+            }
+
+            .content {
+                padding: 20px 16px;
+                padding-bottom: 60px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .header .subtitle {
+                font-size: 12px;
+            }
+
+            .controls {
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 12px;
+            }
+
+            .btn {
+                padding: 8px 14px;
+                font-size: 13px;
+                flex: 1;
+                min-width: 80px;
+                justify-content: center;
+            }
+
+            .speed-control {
+                width: 100%;
+                margin-left: 0;
+                justify-content: center;
+                padding-top: 4px;
+            }
+
+            .speed-control input {
+                width: 100px;
+            }
+
+            .step-title {
+                font-size: 15px;
+            }
+
+            .step-badge {
+                font-size: 10px;
+                padding: 4px 8px;
+            }
+
+            .step-description {
+                font-size: 13px;
+                padding-left: 0;
+                margin-top: 8px;
+            }
+
+            .code-section {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+
+            .code-block {
+                padding: 12px;
+                font-size: 12px;
+                line-height: 1.5;
+            }
+
+            .code-line {
+                font-size: 12px;
+            }
+
+            .repl-output {
+                padding: 12px;
+                font-size: 11px;
+                margin-left: 0;
+            }
+
+            .sub-calls-container {
+                margin-left: 0;
+                padding-left: 12px;
+                margin-top: 16px;
+            }
+
+            .sub-calls-header {
+                font-size: 13px;
+            }
+
+            .sub-call {
+                padding: 12px;
+            }
+
+            .sub-call-prompt,
+            .sub-call-response {
+                font-size: 11px;
+            }
+
+            .aggregation-visual {
+                margin-left: 0;
+                padding: 16px;
+            }
+
+            .agg-flow {
+                gap: 8px;
+            }
+
+            .agg-chunk {
+                font-size: 11px;
+                padding: 8px 10px;
+            }
+
+            .agg-arrow {
+                font-size: 18px;
+            }
+
+            .agg-result {
+                font-size: 12px;
+                padding: 12px 16px;
+            }
+
+            .final-answer-box {
+                margin-left: 0;
+                padding: 18px;
+            }
+
+            .final-answer-title {
+                font-size: 16px;
+            }
+
+            .final-answer-text {
+                font-size: 14px;
+            }
+
+            .status-bar {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                padding: 10px 14px;
+                font-size: 12px;
+                gap: 10px;
+                justify-content: space-between;
+            }
+
+            .scenario-btn {
+                padding: 12px;
+            }
+
+            .scenario-btn h3 {
+                font-size: 13px;
+            }
+
+            .scenario-btn p {
+                font-size: 11px;
+            }
+
+            .info-row {
+                font-size: 12px;
+            }
+
+            .legend {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .legend {
+                display: none; /* Hide legend on mobile to save space */
+            }
+
+            .empty-state {
+                padding: 40px 16px;
+            }
+
+            .empty-state-icon {
+                font-size: 48px;
+            }
+
+            .empty-state h2 {
+                font-size: 20px;
+            }
+
+            .empty-state p {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .header .subtitle {
+                display: none;
+            }
+
+            .controls {
+                gap: 6px;
+            }
+
+            .btn {
+                padding: 8px 10px;
+                font-size: 12px;
+                min-width: 60px;
+            }
+
+            .btn span:first-child {
+                font-size: 14px;
+            }
+
+            .flow-step-header {
+                flex-wrap: wrap;
+            }
+
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+            }
+
+            .step-title {
+                font-size: 14px;
+            }
+
+            .step-badge {
+                font-size: 9px;
+                padding: 3px 6px;
+            }
+
+            .step-description {
+                font-size: 12px;
+            }
+
+            .code-section-label {
+                font-size: 10px;
+            }
+
+            .code-block {
+                padding: 10px;
+                font-size: 11px;
+                line-height: 1.4;
+            }
+
+            .repl-output {
+                padding: 10px;
+                font-size: 10px;
+            }
+
+            .repl-output-label {
+                font-size: 10px;
+            }
+
+            .sub-call {
+                padding: 10px;
+            }
+
+            .sub-call-icon {
+                width: 24px;
+                height: 24px;
+                font-size: 12px;
+            }
+
+            .sub-call-title {
+                font-size: 13px;
+            }
+
+            .sub-call-prompt,
+            .sub-call-response {
+                font-size: 10px;
+                padding: 10px;
+            }
+
+            .agg-chunk {
+                font-size: 10px;
+                padding: 6px 8px;
+            }
+
+            .agg-result {
+                font-size: 11px;
+                padding: 10px 12px;
+            }
+
+            .final-answer-box {
+                padding: 14px;
+            }
+
+            .final-answer-title {
+                font-size: 14px;
+            }
+
+            .final-answer-text {
+                font-size: 13px;
+            }
+
+            .status-bar {
+                padding: 8px 10px;
+                font-size: 11px;
+            }
+        }
     </style>
 </head>
 <body>
